@@ -5,7 +5,8 @@ import PackageDescription
 let package = Package(
     name: "SwiftKeychainWrapper",
     products: [
-        .library(name: "SwiftKeychainWrapper", targets: ["SwiftKeychainWrapper"])
+        .library(name: "SwiftKeychainWrapper", targets: ["SwiftKeychainWrapper"]),
+        .library(name: "SwiftKeychainWrapperDynamic", type: .dynamic, targets: ["SwiftKeychainWrapper"])
     ],
     targets: [
         .target(name: "SwiftKeychainWrapper", path: "SwiftKeychainWrapper"),
